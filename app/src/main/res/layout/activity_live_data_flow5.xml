@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveDataFlow4.LiveDataFlowActivity4">
+
+    <TextView
+        android:id="@+id/txtLiveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LiveData Here"
+        android:textSize="38sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLiveData"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="LiveData Change"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLiveData" />
+
+    <TextView
+        android:id="@+id/txtStateFLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State Flow Data Here"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLiveData" />
+
+    <Button
+        android:id="@+id/btnStateFLow"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Change Flow"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStateFLow" />
+
+    <TextView
+        android:id="@+id/txtStateFLowEmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State Flow Emit Here"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStateFLow" />
+
+    <Button
+        android:id="@+id/btnStateFLowEmit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Change Flow Emit"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStateFLowEmit" />
+
+    <EditText
+        android:id="@+id/txtLiveStateValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter live or state value to change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStateFLowEmit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

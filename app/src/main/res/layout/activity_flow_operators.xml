@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        tools:context=".FlowOperators.FlowOperatorsActivity">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <Button
+                    android:id="@+id/btnSimpleFlow"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Simple Flow"/>
+
+                <Button
+                    android:id="@+id/btnFlowForEach"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Flow ForEach"/>
+
+                <Button
+                    android:id="@+id/btnAsFlow"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="As Flow"/>
+
+                <Button
+                    android:id="@+id/btnFirst"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="First"/>
+
+                <Button
+                    android:id="@+id/btnLast"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Last"/>
+
+                <Button
+                    android:id="@+id/btnReduce"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Reduce"/>
+
+                <Button
+                    android:id="@+id/btnFold"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Fold"/>
+
+                <Button
+                    android:id="@+id/btnTake"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Take"/>
+
+                <Button
+                    android:id="@+id/btnZip"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Zip"/>
+
+                <Button
+                    android:id="@+id/btnTransform"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Transform"/>
+
+                <Button
+                    android:id="@+id/btnFlowOn"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="FlowOn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnFlowOfInt"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="FlowOf Int"/>
+
+                <Button
+                    android:id="@+id/btnFlowOfString"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="FlowOf String"/>
+
+                <Button
+                    android:id="@+id/btnChannelFlow"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Channel Flow"/>
+
+                <Button
+                    android:id="@+id/btnFilterMap"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Filter Map"/>
+
+                <Button
+                    android:id="@+id/btnMap"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Map"/>
+
+                <Button
+                    android:id="@+id/btnFilter"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Filter"/>
+
+                <Button
+                    android:id="@+id/btnSet"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Set"/>
+
+                <Button
+                    android:id="@+id/btnList"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="List"/>
+
+                <Button
+                    android:id="@+id/btnDropWhile"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="DropWhile"/>
+
+                <Button
+                    android:id="@+id/btnWithIndex"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="WithIndex"/>
+
+                <Button
+                    android:id="@+id/btnException"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="Exception"/>
+
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>
