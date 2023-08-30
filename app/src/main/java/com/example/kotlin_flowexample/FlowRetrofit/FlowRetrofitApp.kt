@@ -1,8 +1,7 @@
-package com.example.kotlin_flowexample.FlowRoom
+package com.example.kotlin_flowexample.FlowRetrofit
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class MyApp : Application() {
-}
+class FlowRetrofitApp: Application()

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlin_flowexample.FlowOperators.FlowOperatorsActivity
+import com.example.kotlin_flowexample.FlowRetrofit.presentation.FlowRetrofitActivity
 import com.example.kotlin_flowexample.FlowRoom.presentation.FlowRoomActivity
 import com.example.kotlin_flowexample.LiveDataFlow1.LiveDataFlowActivity1
 import com.example.kotlin_flowexample.LiveDataFlow2.LiveDataFlowActivity2
@@ -55,6 +56,10 @@ class MainActivity : AppCompatActivity() {
             }
             btnFlowRoom.setOnClickListener {
                 startActivity(Intent(this@MainActivity, FlowRoomActivity::class.java))
+            }
+
+            btnFlowRetrofit.setOnClickListener {
+                startActivity(Intent(this@MainActivity, FlowRetrofitActivity::class.java))
             }
 
         }
